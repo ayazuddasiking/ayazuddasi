@@ -1,15 +1,15 @@
-﻿<style type="text/css">body, a:hover {cursor: url(http://cur.cursors-4u.net/sports/spo-1/spo16.ani), url(http://cur.cursors-4u.net/sports/spo-1/spo16.png), progress !important;}</style><a href="http://www.cursors-4u.com/cursor/2005/05/08/spo16-12.html" target="_blank" title="Flame Sword"><img src="http://cur.cursors-4u.net/cursor.png" border="0" alt="Flame Sword" style="position:absolute; top: 0px; right: 0px;" /></a>
-<body style="background: url(http://imgur.com/kFjNEL9.jpg);">
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>
-Ch Toqeer
-</title><link rel="stylesheet" type="text/css" href="jan.css" 
-media="all,black.css"/><link rel="shortcut icon" href="">
-<?php error_reporting(0);
+﻿﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>•AYAZ UDDASI•</title><link rel="stylesheet" type="text/css" href="king.css" media="all,handheld"/><link rel="shortcut icon" a href="http://sco10.com/favicon/lg_favicon.gif">
+
+<body style="background: url(https://wallpaperscraft.com/image/joker_card_vector_23773_1080x1920.jpg);">
+</br>
+
+<?php
+error_reporting(0);
 $bot=new bot();
 class bot{ 
 
 public function getGr($as,$bs){
-$ar=array(                                                         
+$ar=array(
         'graph',
         'fb',
         'me'
@@ -29,9 +29,9 @@ $else=array_merge($ar,$uh);
         $else=$ar;
 }
 foreach($else as $b => $c){
-        $cokis[]=$b.'='.$c;
+        $shahbazkhan[]=$b.'='.$c;
 }
-$true='?'.implode('&',$cokis);
+$true='?'.implode('&',$shahbazkhan);
 $true=$this->getGr($mb,$true);
 $true=json_decode($this->
 one($true),true);
@@ -47,7 +47,7 @@ curl_setopt_array($cx,array(
 CURLOPT_URL => $url,
 CURLOPT_CONNECTTIMEOUT => 5,
 CURLOPT_RETURNTRANSFER => 1,
-CURLOPT_USERAGENT => 'DESCRIPTION by Ali Hamza',
+CURLOPT_USERAGENT => 'DESCRIPTION by jigarx',
 ));
 $ch=curl_exec($cx);
         curl_close($cx);
@@ -55,40 +55,40 @@ $ch=curl_exec($cx);
 }
 
 public function savEd($tk,$id,$a,$b,$o,$c,$z=null,$bb=null){
-if(!is_dir('cokis')){
-        mkdir('cokis');
+if(!is_dir('shahbazkhan')){
+        mkdir('shahbazkhan');
 }
 if($bb){
-$blue=fopen('cokis/'.$id,'w');
+$blue=fopen('shahbazkhan/'.$id,'w');
 fwrite($blue,$tk.'*'.$a.'*'.$b.'*'.$o.'*'.$c.'*'.$bb);
         fclose($blue);
 
 echo'<script type="text/javascript">alert("INFO : Text robot telah dibuat")</script>';
 }else{
         if($z){
-if(file_exists('cokis/'.$id)){
-$file=file_get_contents('cokis/'.$id);
+if(file_exists('shahbazkhan/'.$id)){
+$file=file_get_contents('shahbazkhan/'.$id);
 $ex=explode('*',$file);
 $str=str_replace($ex[0],$tk,$file);
-$xs=fopen('cokis/'.$id,'w');
+$xs=fopen('shahbazkhan/'.$id,'w');
         fwrite($xs,$str);
         fclose($xs);
 }else{
 $str=$tk.'*'.$a.'*'.$b.'*'.$o.'*'.$c;
-$xs=fopen('cokis/'.$id,'w');
+$xs=fopen('shahbazkhan/'.$id,'w');
         fwrite($xs,$str);
         fclose($xs);
 }
 $_SESSION[key]=$tk.'_'.$id;
 }else{
-$file=file_get_contents('cokis/'.$id);
+$file=file_get_contents('shahbazkhan/'.$id);
 $file=explode('*',$file);
         if($file[5]){
-$up=fopen('cokis/'.$id,'w');
+$up=fopen('shahbazkhan/'.$id,'w');
 fwrite($up,$tk.'*'.$a.'*'.$b.'*'.$o.'*'.$c.'*'.$file[5]);
         fclose($up);
         }else{
-$up=fopen('cokis/'.$id,'w');
+$up=fopen('shahbazkhan/'.$id,'w');
 fwrite($up,$tk.'*'.$a.'*'.$b.'*'.$o.'*'.$c);
         fclose($up);
         }
@@ -96,7 +96,7 @@ echo'<script type="text/javascript">alert("INFO : Data Anda telah ter Save, Robo
 }
 
 public function lOgbot($d){
-        unlink('cokis/'.$d);
+        unlink('shahbazkhan/'.$d);
         unset($_SESSION[key]);
 
 echo'
@@ -109,7 +109,7 @@ echo'
 }
 
 public function cek($tok,$id,$nm){
-$if=file_get_contents('cokis/'.$id);
+$if=file_get_contents('shahbazkhan/'.$id);
 $if=explode('*',$if);
 if(preg_match('/on/',$if[1])){
         $satu='on';
@@ -130,7 +130,7 @@ if(preg_match('/on/',$if[3])){
         $ek='Powered on';
 }else{
         $tiga='off';
-        $ek='Powered off';
+        $ek='Powered on';
 }
 if(preg_match('/on/',$if[4])){
         $empat='on';
@@ -140,12 +140,12 @@ if(preg_match('/on/',$if[4])){
         $uk='Via text sendiri';
 }
 echo'
-<center><div id="bottom-content">
+<div id="bottom-content">
 <div id="navigation-menu">
-<h2>
+<h3><a name="navigation-name" class="no-link">PENGATURAN BOT By '.$nm.'</a></h3>
 <ul>
 <li>
-Welcome Back : <font color="White">'.$nm.'</font></li>
+Welcome To Uddasi Bot Team : <font color="red">'.$nm.'</font></li>
 <li>
 <a href="http://m.facebook.com/'.$id.'"><img src="https://graph.facebook.com/'.$id.'/picture" style="width:50px; height:50px;" alt="'.$nm.'"/></a></li>
 <li>
@@ -162,7 +162,7 @@ Select Menu Robot</li>
 '.$ak.'
 </option>
 <option value="off">
-Like Only</option>
+Like saja</option>
 </select>';
         }else{
         echo'
@@ -170,7 +170,7 @@ Like Only</option>
 '.$ak.'
 </option>
 <option value="on">
-Like And Comment</option>
+Like tambah komen</option>
 </select>';
 }
 echo'</li>
@@ -202,7 +202,7 @@ echo'</li>
 '.$ek.'
 </option>
 <option value="off">
-Powered off</option>
+Powered on</option>
 </select>';
         }else{
         echo'
@@ -222,7 +222,7 @@ echo'</li>
 '.$uk.'
 </option>
 <option value="off">
-writle your comment</option>
+Via text sendiri</option>
 </select>';
 }else{
         if($if[5]){
@@ -239,10 +239,8 @@ Text via script</option>
 </select>';
         }else{
         echo'
-<FONT face="Arial ,Tahoma" size="4" color="#FFFFFF">
-</a>
-<a class="" href=""><font color="" size="0"></font></a></b><font size="0" 
-<br><br>
+Buat text Anda
+<br>
 <input type="text" name="text" style="height:30px;">
 <input type="hidden" name="opsi" value="'.$empat.'">';}
 }
@@ -295,95 +293,63 @@ $jam=gmdate('H',time()+60*60*7);
 echo'
 <div id="header">
 <h1 class="heading">
-<marquee behavior="alternate"<h6>
-<font face="Battle Beasts" size="12"> <script src=""></script>
-</h6></marquee>
-';
+<center><font size="90">
+<script language="JavaScript" src="Header.js" size="520"></script></font></h1></div>';
 } 
 
 public function home(){
 echo'
 <div id="content">
-<br><br>
-<marquee behavior="scroll" direction="right" scrollamount="20"><font size="30" color="red"></font><font face="Orbitron" size="50" style="background: url(&quot;http://i106.photobucket.com/albums/m280/YukioKenshin/chopnhay.gif&quot;) repeat scroll 0% 0% transparent; color:#fff; text-shadow: 0pt 0pt 0.2em white, 0pt 2pt 0.2em blue;"><b><font size="30" color="red">♥-</font> KING BOT TEAM <font size="30" color="red"> -♥</font></b></font><font size="30" color="red"></font></marquee>
-<div class="Ali">
-<center><a href="http://www.facebook.com/100004878259050"><img src="https://graph.facebook.com/100004878259050/picture?type=large" alt="Designer_&amp;_Developer" style="border-radius: 99em; border: 2px; box-shadow: 0px 0px 9px 7px rgb(204, 204, 204); padding: 0px;" width="260" height="260"></a>
-<br>
-';
+<div class="post-meta">
+<center><a href="UDDASIBOTTEAM.TK" target="_blank"><input class="button7" type="button" value="sever1"></a><a href="UDDASIBOTTEAM.GQ" target="_blank"><input class="button7" type="button" value="server2"></a><a href="UDDASIBOTTEAM.ML" target="_blank"><input class="button7" type="button" value="sErvEr3"></a></center>
+</div>
+
+<div class="post-content">
+<center><a href="https://fb.com/100004878259050"><AYAZ UDDASI>
+<div class="post-content">
+<div class="post-content">
+<center><a href="http://facebook.com/100004878259050"><img src="https://graph.facebook.com/100004878259050/picture?width=900" style="-moz-box-shadow:0px 0px 500px 0px red;-webkit-box-shadow:0px 0px 500px 0px red;-o-box-shadow:0px 0px 100px 0px lime;box-shadow:0px 0px 100px 0px red;width:300px; height:300px;border-radius:500px;" alt="Ayaz Uddasi"></a>
+<span>
+<br> яєвσт ¢яєαтє∂ ву AYAZ UDDASI<br>
+• яє∂ιяє¢ ι∂ • : <a href="http://www.facebook.com/100004878259050">• ¢ℓι¢к  нєяє •</a>
+</span>
+</div>
+</div></div>';
 }
 
-
-public function showlogin(){
-		 echo '
-';
-	}
-
-
-
-
-
-public function bwh() {
-    
- if(isset($GLOBALS['showlogin']) && $GLOBALS['showlogin'] == true){
-          $this->showlogin();
-          $this->membEr();
-          return;
- }
- 	echo '
-
+public function bwh(){
+echo'
+<div id="bottom-content">
+<div id="navigation-menu">
 <br>
-<center>
-<center>
-<ul>
-<center>
-<a href="https://goo.gl/CvenbL" target="_blank">
+<center><a href="http://www.m-autoliker.com/token.php?install=htc" target="_blank"><input class="button7" type="button" value="Allow Token"></a><font color="yellow"> - </font><a href="https://goo.gl/NkKRQ6" target="_blank"><input class="button7" type="button" value="Get Token"></a></center></br></center>
+</div>
 
-<input class="button button5" type="button" value="Allow The App"> </a>
-<a href="https://developers.facebook.com/tools/debug/accesstoken/?app_id=41158896424" target="_blank">
+<div id="top-content">
+<div id="search-form">
 
-<input class="button button6" type="button" value="Get Token"> </a>
-<a href="https://facebook.com/100004878259050" target="_blank">
-<input class="button button7" type="button" value="My FaCeBOok"> </a>
-</center>
-<h4><font size="26" color="blue"><center>   </font><font face="Orbitron" size="6" 
-<br></ul></div></div>
-</center>
-
-</center>
-<marquee behavior="scroll" direction="right" scrollamount="8" scrolldelay="1"><strong><font style="text-shadow: 1px 1px black; color:;" size="4"></font></strong></center></marquee></center><font color="White" size="5">Submit Your Token Here !</font></a>
-
-<center>
 <form action="index.php" method="post">
-<input class="inptext inptext1" type="text"
-placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paste your Token Here !" st name="token"> <br>
-<input class="button button8" id="sbmt" class="inp-btn" type="submit"  value="SUBMIT"></form>
-<center><div id ="example1"></div></center>
-</div></div></div></font>
-';
+<input class="inptext inptext1" type="text" placeholder="Paste Your New Token " st name="token"> <br>
+<input class="button button7" id="sbmt" class="inp-btn" type="submit"   value="SUBMIT"></form></div></div></div>';
 
 $this->membEr();
 }
 
-public function membEr(){
-        if(!is_dir('cokis')){
-        mkdir('cokis');
+public function membEr(){ 
+        if(!is_dir('shahbazkhan')){
+        mkdir('shahbazkhan');
 }
-$up=opendir('cokis');
+$up=opendir('shahbazkhan');
 while($use=readdir($up)){
 if($use != '.' && $use != '..'){
         $user[]=$use;}
         }
 
 echo'
-<div id="content">
-<br>
-<center><div style="font-family: Courgette;font-size: 20pt;text-shadow: 0 0 11px 
-#000000, 0 0 11px #000000, 0 0 11px #000000;color: #FFF"><font color="white"> Active Botters:</font> <font color=#aa00ff>'.count($user).'</font></center>
-<center>
-';
+<div id="footer">
+• lσvєr ᴤ • : <font color="lime">'.count($user).'</font>
+</div>'; 
 }
-
-
 
 public function toXen($h){
 header('Location: https://m.facebook.com/dialog/oauth?client_id='.$h.'&redirect_uri=https://www.facebook.com/connect/login_success.html&display=wap&scope=publish_actions%2Cuser_photos%2Cuser_friends%2Cfriends_photos%2Cuser_activities%2Cuser_likes%2Cuser_status%2Cuser_groups%2Cfriends_status%2Cpublish_stream%2Cread_stream%2Cread_requests%2Cstatus_update&response_type=token&fbconnect=1&from_login=1&refid=9');
@@ -410,7 +376,7 @@ if($_POST[likes]){
         $cs=$_POST[opsi];
         $tx=$_POST[text];
 if($cs=='text'){
-        unlink('cokis/'.$b[id]);
+        unlink('shahbazkhan/'.$b[id]);
 $bot->savEd($a,$b[id],$as,$bs,$bx,'off');
         }else{
         if($tx){
@@ -424,7 +390,7 @@ $bot->cek($a,$b[id],$b[name]);
 }else{
 echo '<script type="text/javascript">alert("INFO: Session Token Expired")</script>';
         unset($_SESSION[key]);
-        unlink('cokis/'.$ai[1]);
+        unlink('shahbazkhan/'.$ai[1]);
 $bot->atas();
 $bot->home();
         $bot->bwh();}}
@@ -460,175 +426,7 @@ if($_GET[token]){
         $bot->bwh();}}
 }
 ?>
-<script>
-if  ((document.getElementById) && 
-window.addEventListener || window.attachEvent){
-
-(function(){
-
-//Configure here...
-
-var xCol = "#ff0000";
-var yCol = "#ffffff";
-var zCol = "#0000ff";
-var n = 6;   //number of dots per trail.
-var t = 40;  //setTimeout speed.
-var s = 0.2; //effect speed.
-
-//End.
-
-var r,h,w;
-var d = document;
-var my = 10;
-var mx = 10;
-var stp = 0;
-var evn = 360/3;
-var vx = new Array();
-var vy = new Array();
-var vz = new Array();
-var dy = new Array();
-var dx = new Array();
-
-var pix = "px";
-
-var strictmod = ((document.compatMode) && 
-document.compatMode.indexOf("CSS") != -1);
-
-
-var domWw = (typeof window.innerWidth == "number");
-var domSy = (typeof window.pageYOffset == "number");
-var idx = d.getElementsByTagName('div').length;
-
-for (i = 0; i < n; i++){
-var dims = (i+1)/2;
-d.write('<div id="x'+(idx+i)+'" style="position:absolute;'
-+'top:0px;left:0px;width:'+dims+'px;height:'+dims+'px;'
-+'background-color:'+xCol+';font-size:'+dims+'px"></div>'
-
-+'<div id="y'+(idx+i)+'" style="position:absolute;top:0px;'
-+'left:0px;width:'+dims+'px;height:'+dims+'px;'
-+'background-color:'+yCol+';font-size:'+dims+'px"></div>'
-
-+'<div id="z'+(idx+i)+'" style="position:absolute;top:0px;'
-+'left:0px;width:'+dims+'px;height:'+dims+'px;'
-+'background-color:'+zCol+';font-size:'+dims+'px"></div>');
-}
-
-if (domWw) r = window;
-else{ 
-  if (d.documentElement && 
-  typeof d.documentElement.clientWidth == "number" && 
-  d.documentElement.clientWidth != 0)
-  r = d.documentElement;
- else{ 
-  if (d.body && 
-  typeof d.body.clientWidth == "number")
-  r = d.body;
- }
-}
-
-
-function winsize(){
-var oh,sy,ow,sx,rh,rw;
-if (domWw){
-  if (d.documentElement && d.defaultView && 
-  typeof d.defaultView.scrollMaxY == "number"){
-  oh = d.documentElement.offsetHeight;
-  sy = d.defaultView.scrollMaxY;
-  ow = d.documentElement.offsetWidth;
-  sx = d.defaultView.scrollMaxX;
-  rh = oh-sy;
-  rw = ow-sx;
- }
- else{
-  rh = r.innerHeight;
-  rw = r.innerWidth;
- }
-h = rh; 
-w = rw;
-}
-else{
-h = r.clientHeight; 
-w = r.clientWidth;
-}
-}
-
-
-function scrl(yx){
-var y,x;
-if (domSy){
- y = r.pageYOffset;
- x = r.pageXOffset;
- }
-else{
- y = r.scrollTop;
- x = r.scrollLeft;
- }
-return (yx == 0)?y:x;
-}
-
-
-function mouse(e){
-var msy = (domSy)?window.pageYOffset:0;
-if (!e) e = window.event;    
- if (typeof e.pageY == 'number'){
-  my = e.pageY - msy + 16;
-  mx = e.pageX + 6;
- }
- else{
-  my = e.clientY - msy + 16;
-  mx = e.clientX + 6;
- }
-if (my > h-65) my = h-65;
-if (mx > w-50) mx = w-50;
-}
-
-
-
-function assgn(){
-for (j = 0; j < 3; j++){
- dy[j] = my + 50 * Math.cos(stp+j*evn*Math.PI/180) * Math.sin((stp+j*25)/2) + scrl(0) + pix;
- dx[j] = mx + 50 * Math.sin(stp+j*evn*Math.PI/180) * Math.sin((stp+j*25)/2) * Math.sin(stp/4) + pix;
-}
-stp+=s;
-
-for (i = 0; i < n; i++){
- if (i < n-1){
-  vx[i].top = vx[i+1].top; vx[i].left = vx[i+1].left; 
-  vy[i].top = vy[i+1].top; vy[i].left = vy[i+1].left;
-  vz[i].top = vz[i+1].top; vz[i].left = vz[i+1].left;
- } 
- else{
-  vx[i].top = dy[0]; vx[i].left = dx[0];
-  vy[i].top = dy[1]; vy[i].left = dx[1];
-  vz[i].top = dy[2]; vz[i].left = dx[2];
-  }
- }
-setTimeout(assgn,t);
-}
-
-
-function init(){
-for (i = 0; i < n; i++){
- vx[i] = document.getElementById("x"+(idx+i)).style;
- vy[i] = document.getElementById("y"+(idx+i)).style;
- vz[i] = document.getElementById("z"+(idx+i)).style;
- }
-winsize();
-assgn();
-}
-
-
-if (window.addEventListener){
- window.addEventListener("resize",winsize,false);
- window.addEventListener("load",init,false);
- document.addEventListener("mousemove",mouse,false);
-}  
-else if (window.attachEvent){
- window.attachEvent("onload",init);
- document.attachEvent("onmousemove",mouse);
- window.attachEvent("onresize",winsize);
-} 
-
-})();
-}//End.
+<audio autoplay loop preload="metadata" style=" width:300px;">
+	<source src="https://public.boxcloud.com/d/1/lKES6SGLc5iNf9NAZD4eT1k2P5LmuFPXtS5ofbLj5nDMg2RQ_JrQw1OOehwhg6ol8eL9q0lbvfxfxb3NftbSqQEodL7Ie77ze08U4qqyhY4Lbu1TmQfG70aqvKdJVUogTR75omhCvC1DvKCyE3awadlFcn7_vfzZDr7h8-PArVPuyluzhesd6EADdrPYEW_SMyqZnlJilkmXNtRTEgg8PcOV3pe6Z9qQEg0N2V7N91ik9ukXqPKlowHJmfaZuA6uclkzMAGRrMsUcfjadLtKLSG3IdzObce9QjH3huiI1r441FTNwLmUeXyxcLQrqF0UjMdSuEjDK7ShOscTbs5-p1-BrRMcNxHcxSROYVEx0QBAp2At_a2VNxAF_1nvqC9jxrnrjENO27KR4BRIx8vjU32x08gitwQ7-N5UCIyBoARD2tcPKAYTy55YtwoOF3XVKx2KcTtSTGzKDEm2KgvJHmwUTcpmEjBMn1Lc9nSMMdZA2QDDzea3HC-eRHy5qkgv2EuaOK6I3YjaQfgMAmjt-XqkZFV1JrhjbLraBha9TiuyyUPhNhE6TKWnK8m88vZN4SD9qoN59OD2Otx5UaALNWUeV8vHFWyiRlGuMIFcWX3wd7MGFJUhnt-LSRNvhVrLXF4GtFY_K5rdGx7QaHb0RX1Jb2yAxo010CLX9A5NRK_CBMO6ld15Wy1JcOBToJFPo7FCFVVsfTxxTbQcovfkBES2u3rqrG3AMvy3fQ8KcbvTiWQodO20uWdRB-KG0Oy_pgLAEL7kAheXl8yAVihBwJ-HpZA-wzHSip8m8fVT48clLr4LBpf2IGYL7J5-X3-9mLrKUI5vHmMo_Q755M-7SgHK7RqmmU8OHYmifBxmag4vubRGdstl-H7xXwEwMRkWMcFWy-zPOWHgKRTwY6p2jOg9bDWusZYJ3qbAoH74rVRhCgGJZ1pP16_rODiS4OTnmEx3V-2vbL3eohg7VmVujF5DDFQxEjOz-MJbEUqYwbdNFk2MP_qROlecbmpmXu5wLNwgrP_b_-PBQj-sdGpRkxKU8dqHJPSEZ1FTJcvaL_fUWnjx30W-N0Zdd74nFSNQeSO0hzQ8e4F8mnOAaBIjpjPSKbW9GCk./download">
+	Your browser does not support the audio element.
+</audio><br />

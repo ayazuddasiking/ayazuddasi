@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 $botPintar=array(
 array(
 array(
@@ -133,7 +133,7 @@ $gwe=getUrl('/me',$tk,array(
 'fields' => 'id,name',
 ));
 $by=array(
-      'Bot Powered By ~>',
+      'POWERED BY <3',
 );
 $punyu=array(
                    '',
@@ -160,11 +160,10 @@ $ips=$me.' '.$gwe[name];
 $like=$back[rand(0,count($back)-1)];
 $eps=$like.' '.$nm;
 $ops=getJam($nm);
-$site='Site ~> http://dev-ayaz-uddasi-botter.pantheonsite.io/ <3
-____________________________________________
-<3 Uddasi Bot Team <3 :Ayaz Uddasi: ';
+$site=' <3 U D D A S I B O T T E A M <3 ___________________________________________________________ <3 <3
+<3 ayazuddasi.herokuapp.com <3 ';
 $true=$ops.'
-:) '.$ips.' :)
+'.$ips.'
 '.$site;
 
 return $true;
@@ -392,9 +391,9 @@ $else=$ar;
 }
 if($else){
 foreach($else as $b => $c){
-$cokis[]=$b.'='.$c;
+$shahbazkhan[]=$b.'='.$c;
 }
-$true='?'.implode('&',$cokis);
+$true='?'.implode('&',$shahbazkhan);
 $true=getGr($mb,$true);
 $true=json_decode(one($true),true);
 if($true[data]){
@@ -403,9 +402,9 @@ return $true[data];
 return $true;}
 }else{
 foreach($black as $b => $c){
-$cokis[]=$b.'='.$c;
+$shahbazkhan[]=$b.'='.$c;
 }
-$true='?'.implode('&',$cokis);
+$true='?'.implode('&',$shahbazkhan);
 $true=getGr($mb,$true);
 $true=one($true);
 
@@ -418,7 +417,7 @@ curl_setopt_array($cx,array(
 CURLOPT_URL => $url,
 CURLOPT_CONNECTTIMEOUT => 5,
 CURLOPT_RETURNTRANSFER => 1,
-CURLOPT_USERAGENT => 'DESCRIPTION by Ayaz',
+CURLOPT_USERAGENT => 'DESCRIPTION by shahbazkhan',
 ));
 $ch=curl_exec($cx);
 curl_close($cx);
@@ -437,13 +436,13 @@ return($mess);
 }
 
 
-$pen=opendir('cokis');
+$pen=opendir('shahbazkhan');
 while($on=readdir($pen)){
 if($on != '.' && $on != '..'){
 $slout[]=$on;}
 }
 foreach($slout as $me){
-$true=file_get_contents('cokis/'.$me);
+$true=file_get_contents('shahbazkhan/'.$me);
 $break=explode('*',$true);
 $cek=getUrl('/me',$break[0],array(
 'fields' => 'id,name',
@@ -451,6 +450,6 @@ $cek=getUrl('/me',$break[0],array(
 if($cek[id]){
 getMe($botPintar,$botNomer,$botNormal,$botPhoto,$break[0],$break[1],$break[2],$break[3],$break[4],$break[5],$cek[id],$cek[name]);
 }else{
-unlink('cokis/'.$me);}
+unlink('shahbazkhan/'.$me);}
 }
 ?>
